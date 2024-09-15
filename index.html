@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-section">
+                <img src="https://via.placeholder.com/150x100" alt="Logo" class="logo-icon">
+                <h2>CHILI POS</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="#"><i class="fas fa-table"></i> Table Services</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> Reservation</a></li>
+                <li><a href="#"><i class="fas fa-shipping-fast"></i> Delivery</a></li>
+                <li><a href="#"><i class="fas fa-calculator"></i> Accounting</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+            <div class="user-section">
+                <div class="user">
+                    <span class="user-initials">FM</span>
+                    <p>Floyd Miles</p>
+                </div>
+                <div class="user">
+                    <span class="user-initials">AM</span>
+                    <p>Arlene McCoy</p>
+                </div>
+            </div>
+            <button class="logout-btn">Logout</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <input type="text" class="search-bar" placeholder="Search Product here...">
+        
+            </header>
+
+            <!-- Menu Categories -->
+            <div class="menu-categories-wrapper">
+                <div class="menu-categories">
+                    <div class="category active">
+                        <i class="fas fa-th-large"></i>
+                        <p>All</p>     
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-egg"></i>
+                        <p>Breakfast</p>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-utensil-spoon"></i>
+                        <p>Soups</p>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-pizza-slice"></i>
+                        <p>Pasta</p>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-drumstick-bite"></i>
+                        <p>Main Course</p>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-hamburger"></i>
+                        <p>Burgers</p>                   
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-egg"></i>
+                        <p>Breakfast</p>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-utensil-spoon"></i>
+                        <p>Soups</p>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-pizza-slice"></i>
+                        <p>Pasta</p>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-drumstick-bite"></i>
+                        <p>Main Course</p>
+                    </div>
+                    <div class="category">
+                        <i class="fas fa-hamburger"></i>
+                        <p>Burgers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Items -->
+            <section class="menu-items">
+                <div class="menu-item">
+                    
+                    <img src="https://via.placeholder.com/150x100" alt="Salad" class="item-image">
+                    <div class="item-info">
+                        <h4 class="item-name">Tasty Vegetable Salad Healthy Diet</h4>
+                        <div class="item-details">
+                            <span class="item-price">$17.99</span>
+                            <span class="item-type">Veg</span>
+                        </div>
+                        <button class="add-to-dish-btn">Add to Dish</button>
+                    </div>
+                </div>
+
+                <div class="menu-item highlighted">
+                    <div class="discount-label">20% Off</div>
+                    <img src="https://via.placeholder.com/150x100" alt="Burger" class="item-image">
+                    <div class="item-info">
+                        <h4 class="item-name">Original Chess Meat Burger With Chips</h4>
+                        <div class="item-details">
+                            <span class="item-price">$23.99</span>
+                            <span class="item-type">Non Veg</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Tacos" class="item-image">
+                    <div class="item-info">
+                        <h4 class="item-name">Tacos Salsa With Chickens Grilled</h4>
+                        <div class="item-details">
+                            <span class="item-price">$14.99</span>
+                            <span class="item-type">Non Veg</span>
+                        </div>
+                        <button class="add-to-dish-btn">Add to Dish</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Sushi" class="item-image">
+                    <div class="item-info">
+                        <h4 class="item-name">Meat Sushi Maki With Tuna, Shrimp And Other</h4>
+                        <div class="item-details">
+                            <span class="item-price">$9.99</span>
+                            <span class="item-type">Non Veg</span>
+                        </div>
+                        <button class="add-to-dish-btn">Add to Dish</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Juice" class="item-image">
+                    <div class="item-info">
+                        <h4 class="item-name">Fresh Orange Juice With Basil Seed No Sugar</h4>
+                        <div class="item-details">
+                            <span class="item-price">$12.99</span>
+                            <span class="item-type">Veg</span>
+                        </div>
+                        <button class="add-to-dish-btn">Add to Dish</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="discount-label">20% Off</div>
+                    <img src="https://via.placeholder.com/150x100" alt="Burger" class="item-image">
+                    <div class="item-info">
+                        <h4 class="item-name">Original Chess Burger With French Fries</h4>
+                        <div class="item-details">
+                            <span class="item-price">$10.59</span>
+                            <span class="item-type">Veg</span>
+                        </div>
+                        <button class="add-to-dish-btn">Add to Dish</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar (Order Summary) -->
+        <aside class="order-summary">
+            <div class="table-header">
+                <h2>Table 4</h2>
+                <p>Floyd Miles</p>
+                <div class="edit-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+            </div>
+
+            <!-- Dine In, Take Away, Delivery -->
+            <div class="service-buttons">
+                <button class="service-btn active">Dine in</button>
+                <button class="service-btn">Take Away</button>
+                <button class="service-btn">Delivery</button>
+            </div>
+
+            <!-- Order Items -->
+            <div class="order-items">
+
+
+                <div class="order-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Sushi">
+                    <div class="order-details">
+                        <h4>Meat Sushi Maki With Tuna, Shrimp And Other (Non Veg)</h4>
+                        <div class="order-price">
+                            <span>$9.99</span>
+                            <span>1x</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-item">
+                    <img src="https://via.placeholder.com/150x100" alt="Tacos">
+                    <div class="order-details">
+                        <h4>Tacos Salsa With Chickens Grilled</h4>
+                        <div class="order-price">
+                            <span>$14.99</span>
+                            <span>1x</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="totals">
+                <p>Sub Total: <span>$61.96</span></p>
+                <p>Tax 5%: <span>$1.75</span></p>
+                <h3>Total Amount: <span>$63.71</span></h3>
+            </div>
+
+            <!-- Payment Options -->
+            <div class="payment-options">
+                <button class="payment-btn"><i class="fas fa-money-bill-wave"></i> Cash</button>
+                <button class="payment-btn"><i class="fas fa-credit-card"></i> Credit/Debit Card</button>
+                <button class="payment-btn"><i class="fas fa-qrcode"></i> QR Code</button>
+            </div>
+
+            <!-- Place Order Button -->
+            <button class="place-order-btn">Place Order</button>
+        </aside>
+    </div>
+
+    <!-- Bottom Bar (Table Status) -->
+    <div class="bottom-bar">
+        <div class="table-status">
+            <span class="table-id">T1</span>
+            <div class="table-info">
+                <p>Jacob Jones</p>
+                <p>6 items → Kitchen</p>
+            </div>
+            <span class="process-status">Process</span>
+        </div>
+        <div class="table-status">
+            <span class="table-id">T2</span>
+            <div class="table-info">
+                <p>Bessie Cooper</p>
+                <p>6 items → Kitchen</p>
+            </div>
+            <span class="process-status">Process</span>
+        </div>
+        <div class="table-status">
+            <span class="table-id">T3</span>
+            <div class="table-info">
+                <p>Ralph Edwards</p>
+                <p>6 items → Kitchen</p>
+            </div>
+            <span class="process-status">Process</span>
+        </div>
+        <div class="table-status">
+            <span class="table-id">T3</span>
+            <div class="table-info">
+                <p>Ralph Edwards</p>
+                <p>6 items → Kitchen</p>
+            </div>
+            <span class="process-status">Process</span>
+        </div>
+        
+    </div>
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
